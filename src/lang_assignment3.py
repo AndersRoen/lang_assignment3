@@ -12,7 +12,7 @@ plt.rcParams["figure.figsize"] = (20,20)
 
 # loading in a single file
 def load_file(filename):
-    filepath = os.path.join("..", "..", "..", "CDS-LANG", "network_data", filename)
+    filepath = os.path.join("in", filename)
     file = pd.read_csv(filepath, header=0, sep="\t")
     return file
 
